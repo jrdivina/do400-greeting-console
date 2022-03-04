@@ -25,7 +25,7 @@ pipeline{
 stage('Release') {
  steps {
  sh '''
- oc project jrdivina-greetings
+ oc project bcbrze-greetings
  oc start-build greeting-console --follow --wait
  '''
  }
